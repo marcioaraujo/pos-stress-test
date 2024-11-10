@@ -44,3 +44,30 @@ Compilar o container:
 Para realizar o teste de stress na url http://google.com.br, com um total de 10 requests, sendo 5 requests simultâneas, pode ser usado o comando abaixo:
 
 `docker run marcioaraujo/pos-stress-test:1.0 run -u http://google.com.br -c 5 -r 10`
+
+Exemplo de resposta:
+
+Running stress test for url: http://google.com.br, with 10 total requests and 5 concurrent calls
+
+## Start time: 2024-11-10 02:40:56
+
+Request completed -- 1.087995209s
+Request completed -- 1.088168s
+Request completed -- 1.099150668s
+Request completed -- 1.146157875s
+Request completed -- 1.156508292s
+Request completed -- 1.193666251s
+Request completed -- 1.441676917s
+Request completed -- 830.506084ms
+Request completed -- 1.067813459s
+Request completed -- 842.000959ms
+
+---
+
+End time: 2024-11-10 02:41:02
+Total time: 5.328489211s
+Total number of requests: 10
+Average number of requests per second: 1.88
+Number of requests with status 200: 10 (100%)
+Distribution of other status codes:
+HTTP 200: 10 (100%)
