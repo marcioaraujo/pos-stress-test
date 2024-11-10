@@ -38,6 +38,9 @@ Poderemos utilizar essa aplicação fazendo uma chamada via docker. Ex:
 
 ### Instruções de uso
 
+Compilar o container:
+`docker build -t marcioaraujo/pos-stress-test:1.0 .`
+
 Para realizar o teste de stress na url http://google.com.br, com um total de 10 requests, sendo 5 requests simultâneas, pode ser usado o comando abaixo:
 
 `docker run marcioaraujo/pos-stress-test:1.0 run -u http://google.com.br -c 5 -r 10`
